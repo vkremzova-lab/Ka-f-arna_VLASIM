@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ka(f)árna Vlašim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Archivo+Black&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #d7ccc8; /* Floor terracotta/brown tone */
+            background-image: url('https://www.transparenttextures.com/patterns/pinstriped-suit.png');
+        }
+        .font-brand {
+            font-family: 'Archivo Black', sans-serif;
+            text-transform: uppercase;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .wood-texture {
+            background-color: #d4a373;
+            background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+        }
+        .white-planks {
+            background-color: #f8f9fa;
+            background-image: linear-gradient(#e9ecef 1px, transparent 1px);
+            background-size: 100% 40px;
+        }
+        .chalkboard {
+            background-color: #1a1a1a;
+            background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+            color: white;
+            border: 4px solid #3d2b1f;
+        }
+        .leaf-accent {
+            color: #4c7e4f;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d4a373;
+            border-radius: 10px;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="text-zinc-800 min-h-screen overflow-x-hidden">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
