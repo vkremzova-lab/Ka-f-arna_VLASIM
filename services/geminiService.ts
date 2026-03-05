@@ -3,7 +3,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { MenuItem, QuizQuestion } from "../types";
 import { MENU_ITEMS } from "../constants";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
 
 export const getRecommendation = async (userInputs: {
   mood: string;
